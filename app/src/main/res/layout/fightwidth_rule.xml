@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F87C67">
+
+        <LinearLayout
+            android:id="@+id/look_tv"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#666666"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="40dp"
+                    >
+                    <TextView
+                        android:text="05-06 16:00 "
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:layout_weight="1">
+                    </TextView>
+                    <TextView
+                        android:text="已经结束 "
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="#FFF"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/tv_btn"
+                        android:text="精彩一击 "
+                        android:gravity="center"
+                        android:layout_margin="6dp"
+                        android:textColor="#464646"
+                        android:background="#FFF"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/fightwidth"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp"
+                    android:padding="8dp"
+                    >
+                    <TextView
+                        android:background="#FF0000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    </TextView>
+                    <TextView
+                        android:background="#FFFF00"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:gravity="center"
+                        android:background="#0000FF"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <RadioGroup
+                    android:background="@drawable/border"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    android:padding="14dp"
+                    android:gravity="center"
+                    >
+                    <RadioButton
+                        android:textColor="#FFF"
+                        android:text="红方赢"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FF0000"
+                        android:layout_margin="7dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:text="平手"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="7dp"
+                        android:background="#FFFF00"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                    <RadioButton
+                        android:textColor="#FFF"
+                        android:text="蓝方赢"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#0000FF"
+                        android:layout_margin="7dp"
+                        android:gravity="center"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/test_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp" >
+
+                </TextView>
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

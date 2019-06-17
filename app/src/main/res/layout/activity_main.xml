@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#323232"
+        android:padding="6dp"
+        android:gravity="top|left"
+        >
+
+        <ImageView
+            android:layout_width="230dp"
+            android:layout_height="37dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="-12dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/title_img"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="60dp"
+            android:minHeight="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/title_user"
+            >
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ccc"
+        android:id="@+id/main_body"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+            android:background="#000"
+        android:layout_height="50dp">
+
+            <Spinner
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/spinner_tv"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:outlineAmbientShadowColor="#FFCD42"
+                android:outlineSpotShadowColor="#7FAE4D"
+                android:entries="@array/degree"
+                android:background="@drawable/border"
+                android:layout_weight="1"
+                >
+
+            </Spinner>
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/time_btn"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/action"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#4A8AF4"
+            android:layout_height="200dp">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#DC4E41"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_view"
+                ></ListView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/main_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/home_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Custom.TabRadioButton"
+            android:text="首页"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/race_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Custom.TabRadioButton"
+            android:text="比赛"
+            android:checked="true"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:id="@+id/rule_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Custom.TabRadioButton"
+            android:text="规则说明"
+            android:layout_weight="1"/>
+    </RadioGroup>
+
+
+</LinearLayout>

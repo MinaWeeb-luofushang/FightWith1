@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="degree">
+        <item>全部</item>
+        <item>已结束</item>
+        <item>进行中</item>
+        <item>即将开始</item>
+    </string-array>
+</resources>
